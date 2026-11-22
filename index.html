@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101a36">
+<title>RUSSIAN AI WORLD — говори по-русски</title>
+<style>
+:root{--bg:#0b1227;--panel:#121e3d;--panel2:#18284d;--text:#f4f7ff;--muted:#aab8d5;--blue:#76a9ff;--cyan:#6ce5dc;--line:#2b3b63;--gold:#ffd27a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#243c70 0,transparent 35%),linear-gradient(160deg,#0b1227,#101b37 65%,#0b1227);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+.wrap{max-width:1080px;margin:auto;padding:22px 18px 50px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}.brand{font-weight:900;letter-spacing:.09em;font-size:clamp(18px,4vw,27px)}.brand span{color:var(--cyan)}.tag{color:var(--muted);font-size:12px;letter-spacing:.14em}
+.hero{border:1px solid #405481;border-radius:26px;padding:clamp(22px,5vw,42px);background:linear-gradient(115deg,rgba(30,54,100,.96),rgba(17,30,59,.92)),url('');position:relative;overflow:hidden}
+.hero:after{content:"Аа";position:absolute;right:4%;top:-42px;font-size:190px;font-weight:900;color:#ffffff0b;pointer-events:none}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(34px,7vw,62px);line-height:1.02;margin:12px 0}.hero p{max-width:620px;color:#d1dcf2;margin:0 0 22px}.pill{display:inline-flex;border:1px solid #526b9b;border-radius:99px;padding:6px 12px;color:#d9e6ff;font-size:12px;margin:3px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:18px}.card{background:linear-gradient(160deg,#17274a,#111d39);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 12px 34px #0002}.span8{grid-column:span 8}.span4{grid-column:span 4}.span12{grid-column:span 12}
+h2{font-size:20px;margin:0 0 12px}h3{font-size:16px;margin:0 0 7px}.muted{color:var(--muted)}.small{font-size:13px;color:var(--muted)}
+label{display:block;font-size:13px;color:#c8d5ef;margin:12px 0 6px}select,input,textarea{width:100%;border:1px solid #40527c;background:#0d1832;color:var(--text);padding:12px 13px;border-radius:12px;font:inherit;outline:none}select:focus,input:focus,textarea:focus{border-color:var(--cyan)}
+button{border:0;border-radius:12px;padding:12px 16px;background:linear-gradient(110deg,#5c94f5,#55cfc9);color:#07152d;font-weight:800;font-size:14px;cursor:pointer}button.secondary{background:#26395f;color:#edf4ff;border:1px solid #4a608c}button.ghost{background:transparent;border:1px solid #53698f;color:#e7efff}button:disabled{opacity:.45;cursor:not-allowed}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+.scenarios{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.scenario{padding:13px;border:1px solid #3b507d;border-radius:14px;background:#101c37;cursor:pointer;text-align:left;color:var(--text)}.scenario.active{border-color:var(--cyan);background:#17364a}.scenario b{display:block}.scenario small{color:var(--muted)}
+.chat{height:330px;overflow:auto;background:#0a142b;border:1px solid #2d4069;border-radius:15px;padding:14px;display:flex;flex-direction:column;gap:10px}.bubble{max-width:88%;padding:11px 13px;border-radius:15px;font-size:14px;white-space:pre-wrap}.bot{background:#20345d;align-self:flex-start;border-bottom-left-radius:4px}.user{background:#17665f;align-self:flex-end;border-bottom-right-radius:4px}.hint{font-size:12px;color:var(--gold);margin-top:4px}
+.statrow{display:flex;gap:9px;flex-wrap:wrap}.stat{background:#0d1933;border:1px solid #30446d;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat strong{display:block;font-size:22px;color:var(--cyan)}.stat span{font-size:11px;color:var(--muted)}
+footer{text-align:center;color:#8091b5;font-size:12px;margin-top:25px}.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#302b2544;color:#e8d7b4;border-radius:0 10px 10px 0;font-size:12px}
+@media(max-width:760px){.span8,.span4{grid-column:span 12}.scenarios{grid-template-columns:1fr}.chat{height:290px}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><div><div class="brand">RUSSIAN <span>AI</span> WORLD</div><div class="tag">LEARN · SPEAK · EXPLORE</div></div><div class="pill">ДЕМО-ВЕРСИЯ · РКИ</div></header>
+  <section class="hero">
+    <div class="eyebrow">Твоя языковая среда начинается здесь</div>
+    <h1>Говори.<br><span style="color:var(--cyan)">Пробуй. Развивайся.</span></h1>
+    <p>Практикуй русский язык в жизненных ситуациях. Выбирай роль, общайся с виртуальным собеседником и анализируй свои ответы.</p>
+    <span class="pill">A1–B2</span><span class="pill">Речевые ситуации</span><span class="pill">Голосовая практика*</span>
+  </section>
+
+  <main class="grid">
+    <section class="card span4">
+      <h2>1. Настрой тренировку</h2>
+      <label for="level">Твой уровень</label>
+      <select id="level"><option>A1 — начинающий</option><option selected>A2 — базовый</option><option>B1 — средний</option><option>B2 — выше среднего</option></select>
+      <label>Выбери ситуацию</label>
+      <div class="scenarios" id="scenarios">
+        <button class="scenario active" data-scene="cafe"><b>☕ В кафе</b><small>Закажи еду и напиток</small></button>
+        <button class="scenario" data-scene="airport"><b>✈️ В аэропорту</b><small>Регистрация на рейс</small></button>
+        <button class="scenario" data-scene="university"><b>🎓 В университете</b><small>Разговор с преподавателем</small></button>
+        <button class="scenario" data-scene="city"><b>🗺️ В городе</b><small>Спроси дорогу</small></button>
+      </div>
+      <div class="actions"><button id="start">Начать диалог</button><button class="secondary" id="reset">Сбросить</button></div>
+    </section>
+
+    <section class="card span8">
+      <h2>2. Виртуальный собеседник</h2>
+      <div class="small" id="role">Собеседник: официант · Ситуация: заказ в кафе</div>
+      <div class="chat" id="chat" aria-live="polite"><div class="bubble bot">Здравствуйте! Добро пожаловать в наше кафе. Что будете заказывать?</div></div>
+      <label for="answer">Твой ответ</label>
+      <input id="answer" placeholder="Напиши ответ или воспользуйся микрофоном…" autocomplete="off">
+      <div class="actions">
+        <button id="send">Отправить ответ</button>
+        <button class="secondary" id="mic">🎙️ Говорить</button>
+        <button class="ghost" id="say">🔊 Повторить вопрос</button>
+      </div>
+      <div class="small" id="voiceStatus" style="margin-top:8px">Голосовой ввод зависит от браузера и разрешения на микрофон. На iPhone попробуй Safari.</div>
+    </section>
+
+    <section class="card span8">
+      <h2>3. Обратная связь</h2>
+      <p class="small">После нескольких реплик нажми «Проанализировать». Тренажёр покажет ориентировочные подсказки по ответам.</p>
+      <div class="statrow">
+        <div class="stat"><strong id="turns">0</strong><span>Твоих ответов</span></div>
+        <div class="stat"><strong id="words">0</strong><span>Использовано слов</span></div>
+        <div class="stat"><strong id="progress">0%</strong><span>Ход диалога</span></div>
+      </div>
+      <div class="actions"><button id="analyze">Проанализировать ответы</button><button class="secondary" id="copyPrompt">Скопировать промпт для ИИ</button></div>
+      <div id="feedback" class="notice" style="margin-top:14px">Здесь появятся рекомендации после твоей практики.</div>
+    </section>
+    <section class="card span4">
+      <h2>Методическая идея</h2>
+      <p class="small">Коммуникативное обучение через моделирование реальных ситуаций, речевую практику и рефлексию.</p>
+      <h3>Твоя задача</h3>
+      <p class="small">Не бойся ошибаться. Сначала вырази мысль, затем улучши её.</p>
+      <div class="notice">*Это демонстрационный тренажёр с заранее заданными репликами и простыми подсказками. Он не является полноценной генеративной ИИ-моделью.</div>
+    </section>
+  </main>
+  <footer>RUSSIAN AI WORLD · Образовательный прототип для преподавания русского языка как иностранного</footer>
+</div>
+<script>
+const scenes={
+ cafe:{role:"официант",title:"заказ в кафе",opening:"Здравствуйте! Добро пожаловать в наше кафе. Что будете заказывать?",questions:["Что-нибудь выпить будете?","Хотите заказать что-нибудь ещё?","Вам всё понравилось? Спасибо за визит!"],keywords:[["хочу","мне","пожалуйста","закаж"],["чай","кофе","сок","воду","лимонад"],["спасибо","вкусно","понравилось","счёт"]]},
+ airport:{role:"сотрудник регистрации",title:"регистрация на рейс",opening:"Добрый день! Предъявите, пожалуйста, ваш паспорт и билет.",questions:["Куда вы направляетесь?","У вас есть багаж для регистрации?","Вот ваш посадочный талон. Хорошего полёта!"],keywords:[["москва","лечу","направляюсь","париж","ташкент"],["багаж","чемодан","сумка","нет"],["спасибо","благодарю","до свидания"]]},
+ university:{role:"преподаватель",title:"разговор в университете",opening:"Здравствуйте! Расскажите, пожалуйста, как проходит ваше обучение русскому языку?",questions:["Что вам даётся легче: чтение, письмо или разговор?","Почему вы изучаете русский язык?","Какое занятие помогло бы вам учиться эффективнее?"],keywords:[["легче","чтение","письмо","говорить","разговор"],["потому","учусь","работ","нравится","интерес"],["занятие","практика","разговор","игр","общение"]]},
+ city:{role:"местный житель",title:"как найти дорогу",opening:"Здравствуйте! Вы, кажется, ищете дорогу. Вам помочь?",questions:["Куда именно вы хотите попасть?","Вы предпочитаете идти пешком или поехать на метро?","Понятно. Удачной прогулки!"],keywords:[["хочу","нужно","ищу","музей","метро","улиц"],["пешком","метро","автобус","такси"],["спасибо","благодарю","понятно"]]}
+};
+let scene="cafe",step=0,answers=[],lastBot=scenes.cafe.opening;
+const $=id=>document.getElementById(id);
+function add(text,who){const d=document.createElement("div");d.className="bubble "+who;d.textContent=text;$("chat").appendChild(d);$("chat").scrollTop=$("chat").scrollHeight}
+function updateStats(){$("turns").textContent=answers.length;$("words").textContent=answers.join(" ").trim()?answers.join(" ").trim().split(/\s+/).length:0;$("progress").textContent=Math.min(100,Math.round(answers.length/3*100))+"%"}
+function say(text){if(!("speechSynthesis"in window))return; speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang="ru-RU";u.rate=.92;speechSynthesis.speak(u)}
+function start(){step=0;answers=[];lastBot=scenes[scene].opening;$("chat").innerHTML="";add(lastBot,"bot");$("role").textContent="Собеседник: "+scenes[scene].role+" · Ситуация: "+scenes[scene].title;updateStats();$("feedback").textContent="Диалог начат. Ответь собеседнику, затем продолжай разговор."}
+document.querySelectorAll(".scenario").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".scenario").forEach(x=>x.classList.remove("active"));b.classList.add("active");scene=b.dataset.scene;start()}));
+$("start").onclick=start;
+$("reset").onclick=()=>{start();$("answer").value=""};
+function respond(){const val=$("answer").value.trim();if(!val)return;add(val,"user");answers.push(val);$("answer").value="";const s=scenes[scene];let reply=s.questions[Math.min(step,s.questions.length-1)];step++;lastBot=reply;setTimeout(()=>{add(reply,"bot");say(reply);updateStats()},250);updateStats()}
+$("send").onclick=respond;$("answer").addEventListener("keydown",e=>{if(e.key==="Enter")respond()});
+$("say").onclick=()=>say(lastBot);
+$("analyze").onclick=()=>{if(!answers.length){$("feedback").textContent="Сначала ответь собеседнику хотя бы один раз.";return}
+let text=answers.join(" "),count=text.split(/\s+/).filter(Boolean).length,unique=new Set(text.toLowerCase().match(/[а-яё]+/g)||[]).size;
+let tips=[];if(count<12)tips.push("Попробуй строить более развёрнутые ответы: добавляй причину или подробность.");else tips.push("Ты уже используешь развёрнутые ответы — продолжай развивать мысль.");
+if(!/[.!?]$/.test(answers[answers.length-1]))tips.push("Обрати внимание на завершение предложений и интонацию.");
+if(!/[а-яё]/i.test(text))tips.push("Попробуй отвечать полными фразами на русском языке.");
+tips.push("Полезное упражнение: повтори диалог ещё раз и используй 3 новых слова.");
+$("feedback").textContent="Ориентировочная обратная связь (не автоматическая экспертная оценка): "+tips.join(" ");};
+const promptText=()=>{let level=$("level").value;return "Ты — опытный преподаватель русского языка как иностранного. Проведи со мной голосовой ролевой диалог. Мой уровень: "+level+". Ситуация: "+scenes[scene].title+". Ты играешь роль: "+scenes[scene].role+". Задавай по одному вопросу, жди ответа, не перебивай. Говори естественно и понятно. После каждых 2–3 моих реплик кратко отмечай одну важную ошибку и предлагай исправление, не разрушая диалог. В конце дай 3 конкретные рекомендации. Общайся по-русски."};
+$("copyPrompt").onclick=async()=>{try{await navigator.clipboard.writeText(promptText());$("feedback").textContent="Промпт скопирован. Вставь его в ChatGPT и включи голосовой режим для настоящего генеративного диалога."}catch(e){$("feedback").textContent=promptText()}};
+let recognition=null;
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+if(SR){recognition=new SR();recognition.lang="ru-RU";recognition.interimResults=false;recognition.maxAlternatives=1;recognition.onresult=e=>{$("answer").value=e.results[0][0].transcript;$("voiceStatus").textContent="Речь распознана. Проверь текст и нажми «Отправить ответ»."};recognition.onerror=e=>$("voiceStatus").textContent="Не удалось распознать речь ("+e.error+"). Можно ввести ответ с клавиатуры.";recognition.onend=()=>{}}
+$("mic").onclick=()=>{if(!recognition){$("voiceStatus").textContent="В этом браузере голосовой ввод не поддерживается. Введи ответ с клавиатуры.";return}try{$("voiceStatus").textContent="Слушаю… Говори по-русски." ;recognition.start()}catch(e){$("voiceStatus").textContent="Микрофон уже активен или недоступен. Проверь разрешение браузера."}};
+start();
+</script>
+</body></html>
